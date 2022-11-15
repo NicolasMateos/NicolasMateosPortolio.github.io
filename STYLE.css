@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 1vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -28,6 +28,7 @@ body {
 
 .small-container.centered {
     display:flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -39,6 +40,14 @@ body {
     grid-auto-rows: auto;
     align-items: center;
     justify-content: center;
+}
+
+.vertically-centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .image-container {
